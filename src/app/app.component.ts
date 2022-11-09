@@ -9,6 +9,11 @@ import { NavListComponent } from './nav-list/nav-list.component';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavListComponent],
   template: `
+    <p>
+      The below nav-list is observing a user role and hide disallowed items.
+      That status is also applied to Route.CanMatch guards.
+    </p>
+
     <button (click)="userService.login()">login</button>
     <button (click)="userService.logout()">logout</button>
     <button (click)="userService.makeAdmin()">make admin</button>
